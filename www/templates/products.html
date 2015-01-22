@@ -1,0 +1,10 @@
+<ion-view view-title="{{ category }}">
+    <ion-content>
+        <div class="card" ng-repeat="product in products | filter:{type_he: category, experimented: false}">
+            <div class="item item-text-wrap">
+                <h1>{{ product.name_en }}</h1>
+                <h2>{{ product.name_he }}</h2>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

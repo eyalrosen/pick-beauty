@@ -13,16 +13,15 @@ angular.module('PickBeauty')
   $scope.chat = Chats.get($stateParams.chatId);
 })
 
-.controller('FriendsCtrl', function($scope, Friends) {
-  $scope.friends = Friends.all();
-})
+.controller('CompaniesCtrl', function($scope) { })
 
 .controller('FriendDetailCtrl', function($scope, $stateParams, Friends) {
   $scope.friend = Friends.get($stateParams.friendId);
 })
 
-.controller('AccountCtrl', function($scope) {
-  $scope.settings = {
-    enableFriends: true
-  };
+.controller('CategoriesCtrl', function($scope) {})
+
+.controller('ProductsCtrl', function($scope, $stateParams) {
+	$scope.category = $stateParams.category;
+	console.log('reached here', $scope.category);
 });
