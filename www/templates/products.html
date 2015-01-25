@@ -1,10 +1,12 @@
 <ion-view view-title="{{ categoryName }}">
-    <ion-content>
+    <ion-content id="products">
         <ion-list>
             <ion-item ng-repeat="product in products | filter:{type_he: categoryName, experimented: false}" class="item-icon-left">
-                <i class="icon ion-happy-outline"></i>
-                <h2>{{ product.name_en }}</h2>
-                <h3>{{ product.name_he }}</h3>
+                <i class="icon rabbit-icon"></i>
+                <h2>{{ product.name_en }}<span ng-show="product.name_he && product.name_en"> - </span>{{ product.name_he }}</h2>
+                <h3>{{ product.company_en }}<span ng-show="product.company_he && product.company_en"> - </span>{{ product.company_he }}</h3>
+                <p ng-show="product.experimented" class="experimented">מבצעת ניסויים</p>
+                <p ng-hide="product.experimented" class="not-experimented">לא מבצעת ניסויים</p>
             </ion-item>
         </ion-list>
     </ion-content>

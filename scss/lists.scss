@@ -1,0 +1,33 @@
+
+.item-icon-left {
+    padding-right: 54px !important;
+}
+
+.item-icon-left .icon {
+    right: 11px;
+}
+
+.rabbit-icon {
+    background: url('../img/rabbit-icon.png');
+    width: 33px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 20px;
+}
+
+.item h3 {
+    color: #848484;
+}
+
+.experimented, .not-experimented {
+    float: left;
+    margin-top: -20px;
+}
+
+.experimented {
+    color: red !important;
+}
+
+.not-experimented {
+    color: green !important;
+}

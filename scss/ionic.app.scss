@@ -15,6 +15,17 @@ $royal:                           #886aea !default;
 $dark:                            #444 !default;
 */
 
+
+$stable: #7d5d9a !default;
+$bar-stable-text: white !default;
+
+@import "left-to-right", "layout", "search-bar", "lists", "categories", "companies", "about";
+
+.rabbit-single-line {
+    margin-top: 10px;
+}
+
+
 // The path for our ionicons font files, relative to the built CSS in www/css
 $ionicons-font-path: "../lib/ionic/fonts" !default;
 
