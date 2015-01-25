@@ -9,7 +9,7 @@
             </div>
         </div>
         <ion-item ng-repeat="category in categories | filter:searchText"
-                  href="#/tab/products/{{ category }}">{{ category }}</ion-item>
+                  href="#/tab/products/{{ category.name }}">{{ category.name }}</ion-item>
     </ion-list>
   </ion-content>
 </ion-view>

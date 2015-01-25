@@ -11,31 +11,12 @@ angular.module('PickBeauty').config(function($stateProvider, $urlRouterProvider)
 
 		// Each tab has its own nav history stack:
 
-		.state('tab.dash', {
-			url: '/dash',
+		.state('tab.search', {
+			url: '/search',
 			views: {
-				'tab-dash': {
+				'tab-search': {
 					templateUrl: 'templates/tab-search.html',
-					controller: 'DashCtrl'
-				}
-			}
-		})
-
-		.state('tab.chats', {
-			url: '/chats',
-			views: {
-				'tab-chats': {
-					templateUrl: 'templates/tab-chats.html',
-					controller: 'ChatsCtrl'
-				}
-			}
-		})
-		.state('tab.chat-detail', {
-			url: '/chats/:chatId',
-			views: {
-				'tab-chats': {
-					templateUrl: 'templates/chat-detail.html',
-					controller: 'ChatDetailCtrl'
+					controller: 'SearchCtrl'
 				}
 			}
 		})
@@ -46,15 +27,6 @@ angular.module('PickBeauty').config(function($stateProvider, $urlRouterProvider)
 				'tab-companies': {
 					templateUrl: 'templates/tab-companies.html',
 					controller: 'CompaniesCtrl'
-				}
-			}
-		})
-		.state('tab.friend-detail', {
-			url: '/friend/:friendId',
-			views: {
-				'tab-friends': {
-					templateUrl: 'templates/friend-detail.html',
-					controller: 'FriendDetailCtrl'
 				}
 			}
 		})
@@ -76,9 +48,19 @@ angular.module('PickBeauty').config(function($stateProvider, $urlRouterProvider)
 					controller: 'ProductsCtrl'
 				}
 			}
+		})
+
+		.state('tab.about', {
+			url: '/about',
+			views: {
+				'tab-about': {
+					templateUrl: 'templates/tab-about.html',
+					controller: 'AboutCtrl'
+				}
+			}
 		});
 
 	// if none of the above states are matched, use this as the fallback
-	$urlRouterProvider.otherwise('/tab/dash');
+	$urlRouterProvider.otherwise('/tab/search');
 
 });
