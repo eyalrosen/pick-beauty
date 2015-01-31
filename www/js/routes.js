@@ -42,7 +42,7 @@ angular.module('PickBeauty').config(function($stateProvider, $urlRouterProvider)
 		})
 
 		.state('tab.company', {
-			url: '/company',
+			url: '/company/:company',
 			views: {
 				'tab-companies': {
 					templateUrl: 'templates/tab-company.html',

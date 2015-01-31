@@ -9,7 +9,7 @@
         </div>
         <ion-list>
             <ion-item ng-repeat="company in filteredCompanies = (companies| filter:searchText)" class="item-icon-left"
-                    ui-sref="tab.company">
+                    ui-sref="tab.company({ company: $index })">
                 <i class="icon" ng-class="company.experimented ? 'ion-sad-outline' : 'rabbit-icon rabbit-single-line'"></i>
                 <h2>{{ company.name }} - <span ng-show="company.experimented" class="experimented">מבצעת ניסויים</span><span ng-hide="company.experimented" class="not-experimented">לא מבצעת ניסויים</span></h2>
             </ion-item>
