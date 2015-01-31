@@ -41,6 +41,16 @@ angular.module('PickBeauty').config(function($stateProvider, $urlRouterProvider)
 			}
 		})
 
+		.state('tab.company', {
+			url: '/company',
+			views: {
+				'tab-companies': {
+					templateUrl: 'templates/tab-company.html',
+					controller: 'CompanyCtrl'
+				}
+			}
+		})
+
 		.state('tab.categories', {
 			url: '/categories',
 			views: {
@@ -71,6 +81,6 @@ angular.module('PickBeauty').config(function($stateProvider, $urlRouterProvider)
 		});
 
 	// if none of the above states are matched, use this as the fallback
-	$urlRouterProvider.otherwise('/tab/categories');
+	$urlRouterProvider.otherwise('/tab/companies');
 
 });

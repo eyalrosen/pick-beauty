@@ -1,3 +1,6 @@
+.item-complex.item-icon-left {
+    padding-right: 0 !important;
+}
 
 .item-icon-left {
     padding-right: 54px !important;
@@ -19,15 +22,27 @@
     color: #848484;
 }
 
-.experimented, .not-experimented {
-    float: left;
-    margin-top: -20px;
-}
-
 .experimented {
     color: red !important;
 }
 
 .not-experimented {
     color: green !important;
+}
+
+#no-data {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 22px;
+    line-height: 28px;
+
+    img {
+        height: 220px;
+        content: url('../img/no-data.png');
+    }
+
+    .button {
+        margin-top: 20px;
+        color: white;
+    }
 }

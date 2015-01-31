@@ -21,6 +21,13 @@ body {
   position: absolute !important;
   left: 5px !important; }
 
+@font-face {
+  font-family: OpenSans;
+  src: url('../fonts/OpenSansHebrew-Regular.woff'); }
+
+body {
+  font-family: OpenSans !important; }
+
 .tab-item .icon, .tab-title {
   color: white; }
 
@@ -39,6 +46,9 @@ body {
   line-height: 21px;
   color: white; }
 
+.item-complex.item-icon-left {
+  padding-right: 0 !important; }
+
 .item-icon-left {
   padding-right: 54px !important; }
 
@@ -55,15 +65,23 @@ body {
 .item h3 {
   color: #848484; }
 
-.experimented, .not-experimented {
-  float: left;
-  margin-top: -20px; }
-
 .experimented {
   color: red !important; }
 
 .not-experimented {
   color: green !important; }
+
+#no-data {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 22px;
+  line-height: 28px; }
+  #no-data img {
+    height: 220px;
+    content: url('../img/no-data.png'); }
+  #no-data .button {
+    margin-top: 20px;
+    color: white; }
 
 #categories .item-content {
   padding-right: 20px !important; }
@@ -71,17 +89,61 @@ body {
 #companies .rabbit-icon {
   margin-top: 10px; }
 
+#company #is-experimenting {
+  text-align: center; }
+  #company #is-experimenting img {
+    width: 150px; }
+  #company #is-experimenting #not-experimented-image {
+    content: url('../img/lg-not-experimented.png'); }
+  #company #is-experimenting #official-rabbit {
+    content: url('../img/official-rabbit.png');
+    width: 109px; }
+  #company #is-experimenting #experimented-image {
+    content: url('../img/lg-experimented.png'); }
+  #company #is-experimenting h2 {
+    margin: 0;
+    font-size: 22px; }
+#company h5 {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 20px; }
+
+#contact {
+  text-align: center;
+  margin: 40px 0; }
+  #contact span {
+    position: relative;
+    top: 12px;
+    margin-left: 7px; }
+  #contact .button {
+    color: white;
+    padding: 0px 24px; }
+
+#info #info-header {
+  margin-top: 20px;
+  text-align: center; }
+  #info #info-header img {
+    content: url('../img/info-header.png');
+    width: 200px; }
+#info p {
+  font-size: 16px;
+  margin: 20px; }
+
 #about {
   text-align: center;
   padding-top: 20px; }
   #about #aguda-logo {
-    content: url('../img/aguda-logo.png'); }
+    content: url('../img/aguda-logo2.png');
+    height: 60px; }
+  #about #text {
+    font-size: 17px;
+    margin: 20px 10px; }
   #about .button {
     width: 90%;
     margin: auto;
     margin-top: 10px; }
   #about #facebook {
-    background: #3E59B0;
+    background: #3A619D;
     color: white; }
   #about #website {
     color: white; }

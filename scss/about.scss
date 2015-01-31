@@ -4,7 +4,13 @@
     padding-top: 20px;
 
     #aguda-logo {
-        content: url('../img/aguda-logo.png');
+        content: url('../img/aguda-logo2.png');
+        height: 60px;
+    }
+
+    #text {
+        font-size: 17px;
+        margin: 20px 10px;
     }
 
     .button {
@@ -14,7 +20,7 @@
     }
 
     #facebook {
-        background: #3E59B0;
+        background: #3A619D;
         color: white;
     }
 
