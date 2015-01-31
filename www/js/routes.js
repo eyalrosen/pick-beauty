@@ -11,6 +11,16 @@ angular.module('PickBeauty').config(function($stateProvider, $urlRouterProvider)
 
 		// Each tab has its own nav history stack:
 
+		.state('tab.info', {
+			url: '/info',
+			views: {
+				'tab-info': {
+					templateUrl: 'templates/tab-info.html',
+					controller: 'InfoCtrl'
+				}
+			}
+		})
+
 		.state('tab.search', {
 			url: '/search',
 			views: {

@@ -15,5 +15,7 @@ angular.module('PickBeauty')
 	$scope.categoryName = $stateParams.category;
 })
 
+.controller('InfoCtrl', function($scope) {})
+
 .controller('AboutCtrl', function($scope) {});
 
