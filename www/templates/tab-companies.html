@@ -1,5 +1,10 @@
 <ion-view view-title="המדריך">
-    <ion-content id="companies">
+    <ion-content ng-hide="companies.length">
+        <div id="loading">
+            <img />
+        </div>
+    </ion-content>
+    <ion-content id="companies" ng-show="companies.length">
         <div id="search-box" class="bar bar-header item-input-inset">
             <div class="item-input-wrapper">
                 <i class="icon ion-ios7-search placeholder-icon"></i>
@@ -11,7 +16,7 @@
             <ion-item ng-repeat="company in filteredCompanies = (companies| filter:searchText)" class="item-icon-left"
                     ui-sref="tab.company({ company: $index })">
                 <i class="icon" ng-class="company.experimented ? 'ion-sad-outline' : 'rabbit-icon rabbit-single-line'"></i>
-                <h2>{{ company.name }} - <span ng-show="company.experimented" class="experimented">מבצעת ניסויים</span><span ng-hide="company.experimented" class="not-experimented">לא מבצעת ניסויים</span></h2>
+                <h2>{{ company.name }} - <span ng-show="company.experimented" class="experimented">מבצעת ניסויים</span><span ng-hide="company.experimented" class="not-experimented">לא מבצעת</span></h2>
             </ion-item>
             <div id="no-data" ng-show="companies.length && searchText != null && !filteredCompanies.length">
                 <img /><br />

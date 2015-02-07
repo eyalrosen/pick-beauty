@@ -7,7 +7,7 @@ angular.module('PickBeauty')
 	})
 })
 
-.controller('CompaniesCtrl', function($scope) { })
+.controller('CompaniesCtrl', function($scope) {})
 
 .controller('CompanyCtrl', function($scope, $rootScope, $stateParams) {
 	$scope.company = $rootScope.companies[$stateParams.company];

@@ -32,6 +32,14 @@ body {
 .tab-item .icon, .tab-title {
   color: white; }
 
+#loading {
+  text-align: center;
+  margin-top: 100px; }
+  #loading img {
+    content: url('../img/loader-16.gif');
+    height: 16px;
+    width: 16px; }
+
 .bar.item-input-inset .item-input-wrapper {
   background: #7d5d9a !important; }
 
